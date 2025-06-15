@@ -27,3 +27,24 @@ Esta aplicación permite a los usuarios crear su propia base de datos donde pued
 - Form Management: React Hook Form 7.43.9
 - Styling: CSS3 con variables personalizadas
 - HTTP Client: Fetch API nativo
+
+# Estructura 
+![image](https://github.com/user-attachments/assets/7f742178-6dfd-4c40-b4b6-93920ba3ce4d)
+
+# Detalles claves
+ ### Prerrequisitos
+- Node.js (versión 14 o superior)
+
+### Pasos de Instalacion
+   1. Clonar el repositorio
+        - git clone [URL_DEL_REPOSITORIO]
+        - cd CRUD-Mascotas
+
+   2. Instalar dependencias
+         - npm install
+
+   3. Ejecutar en modo de desarrollo
+         - npm run dev
+
+   4. Abrir en navegador
+        - La aplicación estará disponible en http://localhost:5173
