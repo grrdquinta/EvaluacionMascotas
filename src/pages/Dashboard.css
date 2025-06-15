@@ -1,0 +1,156 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-title {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.stats-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.stat-item {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.pet-card {
+    transition: transform 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+}
+
+.pet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.pet-name {
+    margin: 0;
+    color: #1d1d1d;
+}
+
+.pet-species {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.pet-details {
+    color: #1b1b1b;
+    line-height: 1.6;
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+.empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    text-align: center;
+    padding: 2rem;
+    color: #d32f2f;
+    background-color: #fde8e8;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+.pet-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    justify-content: flex-end;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 1rem;
+}
+
+/* Estilos para el modal de confirmación */
+.delete-confirmation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.delete-confirmation strong {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+.delete-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* Estilos para los iconos de especies */
+.pet-species.perro {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.pet-species.gato {
+    background-color: #f3e5f5;
+    color: #8e24aa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+.pet-species:not(.perro):not(.gato) {
+    background-color: #e8f5e9;
+    color: #388e3c;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+}
+
+/* Ajustes responsive */
+@media (max-width: 768px) {
+    .pet-actions {
+        flex-direction: column;
+    }
+    
+    .delete-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
